@@ -14,3 +14,4 @@ RANKS = {
     "3": 3,
     "2": 2,
 }
+TEXT_COLORS = {"default": "\033[37m", "success": "\033[32m", "error": "\033[91m"}
