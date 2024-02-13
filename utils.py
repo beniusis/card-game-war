@@ -29,3 +29,6 @@ def initialize_players(name1, name2):
     deck = Deck()
     cards = deck.cards
     return Player(name1, cards[::2]), Player(name2, cards[1::2])
+
+def draw_cards(p1, p2):
+    return p1.draw_card(), p2.draw_card()

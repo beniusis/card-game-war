@@ -18,3 +18,6 @@ class Player:
     @deck.setter
     def deck(self, deck):
         self._deck = deck
+
+    def draw_card(self):
+        return self.deck.pop(0)
