@@ -1,7 +1,10 @@
 class Player:
+    pile = []
+
     def __init__(self, name, deck):
         self.name = name
         self.deck = deck
+        self.deck_size = len(self.deck)
 
     @property
     def name(self):
@@ -21,3 +24,6 @@ class Player:
 
     def draw_card(self):
         return self.deck.pop(0)
+
+    def add_cards(self, cards: list):
+        self.deck.extend(cards)
